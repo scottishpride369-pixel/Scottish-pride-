@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://scottishpride369-pixel.github.io/Scottish-pride-/sitemap.xml
