@@ -1,0 +1,1 @@
+export async function GET(){return Response.json({ok:true,service:"scottish-pride-command-centre",agent_mode:"supervised_autonomy",target_hours_per_day:23,timestamp:new Date().toISOString()})}
