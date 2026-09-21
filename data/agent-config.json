@@ -1,0 +1,12 @@
+{
+  "agent_name": "Scottish Pride Business Agent",
+  "version": "1.0",
+  "mode": "supervised_autonomy",
+  "operating_rule": "ONE REVENUE OPPORTUNITY → COMPLETE → LAUNCH → GET PAID → STABILIZE → AUTOMATE → NEXT.",
+  "target_operating_hours_per_day": 23,
+  "timezone": "Europe/London",
+  "approval_required_for": ["financial_commitment","payment_or_refund","contract_or_legal_commitment","public_claim","production_destructive_change","credential_or_secret_change","customer_data_export","new_paid_ad_campaign"],
+  "allowed_without_approval": ["health_checks","analytics_reads","task_generation","report_generation","bounded_retries","draft_creation","non_destructive_repository_updates","evidence_indexing"],
+  "max_retry_attempts": 3,
+  "heartbeat_minutes": 5
+}
