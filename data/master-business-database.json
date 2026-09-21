@@ -1,0 +1,91 @@
+{
+  "name": "Scottish Pride Master Business Database",
+  "version": "1.0",
+  "last_updated": "2026-09-21",
+  "valuation_gbp": 89565,
+  "core_offer": {
+    "name": "AI Automation Setup",
+    "price_gbp": 199
+  },
+  "revenue": [
+    {
+      "source": "Shopify",
+      "amount_gbp": 1900
+    },
+    {
+      "source": "eBay",
+      "amount_gbp": 1300,
+      "period": "201 days"
+    }
+  ],
+  "assets": [
+    {
+      "id": "SHOP-001",
+      "name": "scottishpride.myshopify.com",
+      "type": "shopify_store",
+      "status": "PENDING EVIDENCE"
+    },
+    {
+      "id": "SHOP-002",
+      "name": "domainshop269.myshopify.com",
+      "type": "shopify_store",
+      "status": "PENDING EVIDENCE"
+    },
+    {
+      "id": "SHOP-003",
+      "name": "clotltd.myshopify.com",
+      "type": "shopify_store",
+      "status": "PENDING EVIDENCE"
+    },
+    {
+      "id": "SHOP-004",
+      "name": "scottishpride-nwhtu5mo.myshopify.com",
+      "type": "shopify_store",
+      "status": "PENDING EVIDENCE"
+    },
+    {
+      "id": "DOM-001",
+      "name": "aiplugins.net",
+      "type": "domain",
+      "asking_price_gbp": 3000
+    },
+    {
+      "id": "DOM-002",
+      "name": "evcharginghub.co",
+      "type": "domain",
+      "asking_price_gbp": 100
+    },
+    {
+      "id": "DOM-003",
+      "name": "extensibility.xyz",
+      "type": "domain",
+      "asking_price_gbp": 500
+    },
+    {
+      "id": "DOM-004",
+      "name": "bitonchain.xyz",
+      "type": "domain",
+      "asking_price_gbp": 30000
+    },
+    {
+      "id": "WEB-001",
+      "name": "drumledger-5.polsia.io",
+      "type": "web_property"
+    },
+    {
+      "id": "WEB-002",
+      "name": "rivetmint-5.polsia.io",
+      "type": "web_property"
+    },
+    {
+      "id": "SOC-001",
+      "name": "@briancloy/spride",
+      "type": "digital_identity"
+    },
+    {
+      "id": "DEV-001",
+      "name": "Scottish Pride GitHub property",
+      "type": "software_property"
+    }
+  ]
+}
