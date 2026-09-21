@@ -1,0 +1,42 @@
+name: Business Agent Heartbeat
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate configuration
+        run: |
+          python - <<'PY'
+          import json
+          for p in ["data/agent-config.json", "data/approvals.json", "data/master-business-database.json"]:
+              with open(p) as f: json.load(f)
+          print("Agent configuration valid")
+          PY
+      - name: Safe heartbeat
+        run: |
+          python - <<'PY'
+          import json, datetime
+          cfg=json.load(open("data/agent-config.json"))
+          print("Heartbeat:", datetime.datetime.now(datetime.timezone.utc).isoformat())
+          print("Mode:", cfg["mode"])
+          print("Target hours/day:", cfg["target_operating_hours_per_day"])
+          PY
+      - name: Record heartbeat
+        run: |
+          mkdir -p data/logs
+          echo "$(date -u +%FT%TZ) heartbeat ok" >> data/logs/heartbeat.log
+          git config user.name "Scottish Pride Business Agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/logs/heartbeat.log
+          git diff --cached --quiet || git commit -m "chore(agent): record heartbeat"
+          git push
