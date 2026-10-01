@@ -1,0 +1,21 @@
+{
+  "system": "ULTRON/HERMES",
+  "version": "1.0",
+  "controller": "ULTRON",
+  "agent_creation_authority": "ULTRON_ONLY",
+  "spend_limit_gbp_without_approval": 0,
+  "current_offer": {"name":"AI Automation Setup","price_gbp":199},
+  "agents":[
+    {"id":"research","department":"Research Lab","status":"SPECIFIED"},
+    {"id":"build","department":"Product / Build","status":"SPECIFIED"},
+    {"id":"marketing","department":"Marketing / Content","status":"SPECIFIED"},
+    {"id":"sales","department":"Sales / Outreach","status":"SPECIFIED"},
+    {"id":"ecommerce","department":"Ecommerce","status":"BLOCKED_ON_SHOPIFY"},
+    {"id":"operations","department":"Operations / Fulfilment","status":"SPECIFIED"},
+    {"id":"support","department":"Customer Support","status":"SPECIFIED"},
+    {"id":"analytics","department":"Analytics / CRO","status":"SPECIFIED"},
+    {"id":"finance-control","department":"Finance & Control","status":"SPECIFIED"},
+    {"id":"documentation","department":"Documentation / Evidence","status":"SPECIFIED"},
+    {"id":"automation","department":"Automation / Integrations","status":"SPECIFIED"}
+  ]
+}
