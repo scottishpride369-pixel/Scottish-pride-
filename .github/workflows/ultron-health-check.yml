@@ -1,0 +1,27 @@
+name: ULTRON Health Check
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate master database JSON
+        run: python -m json.tool data/master-business-database.json >/dev/null
+      - name: Validate required command-centre files
+        run: |
+          test -f README.md
+          test -f MASTER_BUSINESS_REGISTER.md
+          test -f package.json
+          test -f app/page.tsx
+          test -f vercel.json
+      - name: Report
+        run: echo "ULTRON health check passed: source-of-truth files and database are present and valid."
