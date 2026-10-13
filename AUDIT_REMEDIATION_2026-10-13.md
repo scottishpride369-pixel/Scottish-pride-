@@ -43,3 +43,10 @@ ONE REVENUE OPPORTUNITY → COMPLETE → LAUNCH → GET PAID → STABILISE → A
 ## Definition of done
 Correct → Complete → Connected → Working → Live → Measured → Evidence Captured.
 For every task record status, owner, blocker, next action, evidence URL, last checked date and cost. Do not label an item complete merely because a draft, account, repository or workflow exists.
+
+
+## Execution update — 2026-10-13
+- Shopify safety fix completed: the two previously active SafeNest Kids listings with unverified supplier/fulfilment evidence and implausible stock counts were changed to DRAFT. A fresh check across all five connected Shopify links (all resolve to the same SafeNest Kids store) found zero active products. Do not reactivate until supplier URL, available stock, UK delivery, full landed cost, margin and fulfilment route are evidenced.
+- Stripe live account audit: multiple active payment links carry North & Mind Business Automation Audit metadata, including plink_1UPzuu3D8irq0pyzplBSw5FF and plink_1UM88O3D8irq0pyzeu7ySEk6. Preserve both until website/marketing destinations are checked; then select one canonical link and safely retire duplicates if appropriate. The inspected Checkout Sessions were expired and unpaid; no successful payment was evidenced.
+- No Make scenario named “ULTRON Daily Revenue Push” was found in either accessible team. The closest “Stripe Payments to Airtable” scenario is inactive, and both module configurations are empty. Its trigger requires a Stripe webhook that is not configured. Do not activate until webhook and Airtable mapping are set and safely tested.
+- Trust evidence review: the current action register reports the deed name mismatch (Brian Thomas Cloy Revocable Living Trust / Cloys Recovery Trust / Clyde Revocable Living Trust), apparently blank signing/witness fields, no confirmed asset transfers, and no confirmed wallet. Keep trust execution, TRS registration and all transfers blocked pending Scottish solicitor/tax review and documentary evidence.
