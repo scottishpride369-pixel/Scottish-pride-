@@ -33,7 +33,7 @@ const products = [
   ["aiplugins.net", "£3,000"],
   ["bitonchain.xyz", "£30,000"],
   ["evcharginghub.co", "£100"],
-  ["extensibility.xyz", "£520"],
+  ["extensibility.xyz", "£500"],
 ];
 
 const creative = [
@@ -88,10 +88,10 @@ export default function Page() {
       <section className="content">
         <header>
           <div>
-            <small>COMMAND CENTRE</small>
+            <small>COMMAND CENTRE · STATIC SNAPSHOT, NOT A LIVE DATA FEED</small>
             <h1>{tab}</h1>
           </div>
-          <div className="status">● SYSTEM ONLINE</div>
+          <div className="status">● PARTIALLY VERIFIED · 13 OCT 2026</div>
         </header>
 
         {tab === "Dashboard" && (
@@ -99,27 +99,27 @@ export default function Page() {
             <div className="hero">
               <div>
                 <small>PRIMARY REVENUE OPPORTUNITY</small>
-                <h2>£199 AI Automation Setup</h2>
+                <h2>£149.99 Business Automation Audit</h2>
                 <p>
                   Traffic → landing page → lead → qualification → payment →
                   fulfilment → support → referral → measurement.
                 </p>
               </div>
               <div className="big">
-                £89,565
-                <small>Latest valuation recorded</small>
+                Unverified
+                <small>Historical valuation estimate — evidence required</small>
               </div>
             </div>
 
             <div className="grid">
-              <Card t="Recorded Shopify revenue" v="£1,900" />
-              <Card t="Recorded eBay revenue" v="£1,300" />
+              <Card t="Historical Shopify revenue" v="Unverified" />
+              <Card t="Historical eBay revenue" v="Unverified" />
               <Card t="Digital assets" v={String(assets.length)} />
-              <Card t="AI agents" v={String(agents.length)} />
+              <Card t="Defined AI roles" v={String(agents.length)} />
             </div>
 
             <Panel title="Today's control board">
-              <Row b="NOW" s="Make £199 offer pathway operational and evidence every step." i="ACTIVE" />
+              <Row b="NOW" s="Verify the £149.99 audit pathway and capture evidence for every step." i="IN PROGRESS" />
               <Row b="SUPPORTING" s="Maintain domain catalogue, stores, CRM, creative and measurement." i="READY" />
               <Row b="HOLD" s="Secondary builds until the primary opportunity is complete." i="GATED" />
             </Panel>
@@ -133,7 +133,7 @@ export default function Page() {
                 <tr>
                   <th>Asset</th>
                   <th>Type</th>
-                  <th>Recorded price</th>
+                  <th>Recorded asking price (unverified)</th>
                   <th>Priority</th>
                   <th>Evidence</th>
                 </tr>
@@ -182,7 +182,7 @@ export default function Page() {
                   key={product}
                   b={product}
                   s={price + " • Image + sales creative • Video advert"}
-                  i="ACTIVE"
+                  i="PENDING EVIDENCE"
                 />
               ))}
             </Panel>
@@ -202,7 +202,7 @@ export default function Page() {
                 key={agent}
                 b={agent}
                 s="Autonomous where appropriate; high-impact actions require approval."
-                i="READY"
+                i="ROLE DEFINED — NOT DEPLOYED"
               />
             ))}
           </Panel>
@@ -252,7 +252,7 @@ export default function Page() {
                 "AI Video",
                 "OpenAI / MCP",
               ].map((item) => (
-                <Card key={item} t={item} v="NOT CONNECTED" />
+                <Card key={item} t={item} v="CHECK LIVE CONNECTION" />
               ))}
             </div>
           </Panel>
@@ -262,13 +262,13 @@ export default function Page() {
           <Panel title="90-Day Execution">
             <Phase t="PHASE 1 — CONSOLIDATE" s="Register every asset, store and evidence source." />
             <Phase t="PHASE 2 — BUILD" s="Command centre, CRM, ecommerce, agents, creative and automation." />
-            <Phase t="PHASE 3 — LAUNCH & STABILIZE" s="Operate the £199 pathway, market products, measure results and automate repetitive work." />
+            <Phase t="PHASE 3 — LAUNCH & STABILIZE" s="Verify the £149.99 audit pathway, market only fulfilable products, measure results and automate stable processes." />
           </Panel>
         )}
 
         {(tab === "Revenue" || tab === "CRM") && (
           <Panel title={tab}>
-            <p>Module scaffolded and ready for live integration.</p>
+            <p>Static placeholder only. Live CRM and revenue data connections are not implemented or verified.</p>
           </Panel>
         )}
       </section>
